@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ethan Perez Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f9fc;
+      color: #333;
+    }
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .navbar {
+      background-color: #036aa1;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #e0f0ff;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .nav-item.active .nav-link {
+      color: #ffffff;
+    }
+    header.jumbotron {
+      background: linear-gradient(135deg, #007bbf, #00b6e4);
+      color: white;
+      padding: 3rem 1rem;
+      margin-bottom: 0;
+    }
+    header h1, header p {
+      color: white;
+    }
+    section h2 {
+      margin-top: 4rem;
+      color: #036aa1;
+      border-bottom: 2px solid #00b6e4;
+      padding-bottom: 0.3rem;
+    }
+    .project-row {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 3rem;
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .project-text h3 a {
+      color: #007bbf;
+      text-decoration: none;
+    }
+    .project-text h3 a:hover {
+      text-decoration: underline;
+    }
+    .project-img {
+      flex: 0 0 250px;
+      margin-left: 2rem;
+    }
+    .project-img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    #about {
+      background-color: #e6f4fa;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #023e58;
+    }
+    footer a {
+      color: #b9e3f5;
+    }
+    footer a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand font-weight-normal" href="#">Ethan Perez</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://drive.google.com/file/d/1hWNgh4nerXjvdHIKaHI20Kd0FQ10w1Y0/view?usp=sharing" target="_blank">Resume</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Header Section -->
+  <header class="jumbotron text-center mt-4">
+    <h1 class="display-4">Aspiring Educational Technologist & Engineer</h1>
+    <p class="lead">I'm Ethan, a UCSD computer engineering major passionate about building tools that empower learning and teaching.</p>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mb-5">
+    <h2 class="mb-4">Projects</h2>
+
+    <!-- Project 1 -->
+    <div id="project1" class="project-row">
+      <div class="project-text">
+        <h3><a href="https://github.com/COGS108/Group021_SP25/blob/master/FinalProject_Group021_SP25.ipynb" target="_blank">Data Analysis</a></h3>
+        <p>Analyzed MLB outfielder performance using Python, pandas, and matplotlib. Built regression models to identify trends by age and league.</p>
+      </div>
+      <div class="project-img">
+        <img src="https://www.catapult.com/wp-content/uploads/2024/10/BASEBALL_METRIC_TELESTRATION-091222-min-scaled-1-1024x791.jpg" alt="Data Analysis Project Screenshot">
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div id="project2" class="project-row">
+      <div class="project-text">
+        <h3><a href="file:///C:/Users/accen/Downloads/lab3-studybuddy-e11perez-main/lab3-studybuddy-e11perez-main/lab3-Perez.html#cta" target="_blank">Study Buddy Website</a></h3>
+        <p>Created a study buddy website to help students find study buddies on campus, bridging educational gaps and fostering academic growth and community.</p>
+      </div>
+      <div class="project-img">
+        <img src="https://www.fastweb.com/uploads/article_photo/photo/2036778/five-tips-for-freshmen-to-find-a-study-buddy-in-class-without-knowing-anyone.jpg" alt="Study Buddy Website Screenshot">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="container mb-5">
+    <h2 class="mb-4">About Me</h2>
+    <p>
+      I’m a Computer Engineering major at UC San Diego with a strong passion for both learning and teaching. 
+      My goal is to contribute to the development of educational technologies that make computer science more accessible, 
+      engaging, and equitable for all students. With a background in research, programming, and user-centered design, 
+      I enjoy building tools and experiences that close the digital divide and promote meaningful learning.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Ethan Perez | <a href="mailto:e11perez@ucsd.edu" class="text-white">Contact</a></p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
